@@ -10,6 +10,7 @@ import postRoutes from './routes/post.routes';
 import likeRoutes from './routes/like.routes';
 import commentRoutes from './routes/comment.routes';
 import followRoutes from './routes/follow.routes';
+import savedRoutes from './routes/saved.routes';
 
 // Load environment variables
 dotenv.config();
@@ -37,6 +38,7 @@ app.use('/api/posts', postRoutes);
 app.use('/api/likes', likeRoutes);
 app.use('/api/comments', commentRoutes);
 app.use('/api/follow', followRoutes);
+app.use('/api/saved', savedRoutes);
 
 // 404 handler
 app.use((req: Request, res: Response) => {

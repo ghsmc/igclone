@@ -6,6 +6,8 @@ export interface User {
   bio?: string;
   avatar?: string;
   website?: string;
+  isVerified?: boolean;
+  isPrivate?: boolean;
   createdAt: string;
   _count?: {
     posts: number;
@@ -19,6 +21,9 @@ export interface Post {
   id: string;
   caption?: string;
   imageUrl: string;
+  location?: string;
+  hideLikeCount?: boolean;
+  commentsOff?: boolean;
   userId: string;
   createdAt: string;
   updatedAt: string;
@@ -27,9 +32,11 @@ export interface Post {
     username: string;
     fullName?: string;
     avatar?: string;
+    isVerified?: boolean;
   };
   comments?: Comment[];
   isLiked?: boolean;
+  isSaved?: boolean;
   _count: {
     likes: number;
     comments: number;
