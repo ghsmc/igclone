@@ -1,0 +1,23 @@
+.feed {
+  max-width: 614px;
+  margin: 0 auto;
+}
+
+.empty-feed {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.empty-feed h2 {
+  margin-bottom: 12px;
+  color: #262626;
+}
+
+.empty-feed p {
+  color: #8e8e8e;
+}
+
+.load-more-btn {
+  width: 100%;
+  margin-top: 20px;
+}
