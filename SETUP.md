@@ -14,7 +14,14 @@ npm run prisma:generate
 npm run prisma:migrate
 
 # When prompted for migration name, enter: instagram_features
+
+# Seed the database with sample data (OPTIONAL but recommended!)
+npm run prisma:seed
 ```
+
+This will create **8 sample users** and **12 posts** with likes, comments, and follows. You can log in with any user:
+- **Email**: travel@demo.com, foodie@demo.com, fitness@demo.com, etc.
+- **Password**: password123
 
 ## Quick Start (After Prisma Fix)
 
@@ -103,6 +110,9 @@ npm run dev
 - 🔒 Private account support
 - ✓ Verified badge system
 - 🎨 Instagram-like color scheme
+- 🌱 **Database Seed Script** - Auto-populate with realistic sample data
+- 📤 **Drag & Drop Upload** - Easier post creation with drag and drop
+- 🖼️ **Better Post Creation** - Instagram-like posting experience with live preview
 
 ## Troubleshooting
 
