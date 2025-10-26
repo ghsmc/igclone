@@ -173,6 +173,55 @@ cd backend
 npm run prisma:migrate
 ```
 
+### 5. Seed Sample Data (Optional but Recommended!)
+
+Populate your database with realistic sample data:
+
+```bash
+cd backend
+npm run prisma:seed
+```
+
+This creates:
+- 8 sample users (verified and regular accounts)
+- 12 posts with beautiful images
+- Likes, comments, and follows
+- Ready-to-use social network!
+
+**Login with any user:**
+- Email: `travel@demo.com`, `foodie@demo.com`, `fitness@demo.com`, etc.
+- Password: `password123`
+
+### 6. Database Management
+
+**Easy Interactive Manager:**
+```bash
+./backend/scripts/db-manager.sh
+```
+
+Provides a menu for:
+- Opening Prisma Studio (visual DB browser)
+- Seeding/resetting database
+- Creating backups
+- Viewing database stats
+- And more!
+
+**Quick Commands:**
+```bash
+cd backend
+
+# Visual database browser
+npm run prisma:studio
+
+# Seed sample data
+npm run prisma:seed
+
+# Reset database
+npx prisma migrate reset
+```
+
+For comprehensive database management, see **[DATABASE_MANAGEMENT.md](DATABASE_MANAGEMENT.md)**
+
 ## API Endpoints
 
 ### Authentication
